@@ -18,11 +18,18 @@ public class Res {
         if (Name.charAt(0)=='G')
         {
             Res.setName("干姜");
-            Res.setLocation("未知");
-            Res.setSulfur(Integer.parseInt(GS.Res(Name)));
-            Res.setSecurity(0);
-            Res.setMix(0);
-
+            Res.setLocation("未知");  //调用位置鉴别算法（未完成）
+            Res.setSulfur(2);  //调用含硫量鉴别算法
+            Res.setSecurity(0);  //调用鉴别等级算法（未完成）
+            Res.setMix(0);  //调用混合算法（未完成）
+        }
+        else if(Name.charAt(0)=='W')
+        {
+            Res.setName("枸杞子");
+            Res.setLocation("未知"); //调用位置鉴别算法（未完成）
+            Res.setSulfur(0); //调用含硫量鉴别算法（未完成）
+            Res.setSecurity(0); //调用鉴别等级算法（未完成）
+            Res.setMix(0); //调用混合算法（未完成）
         }
         return mapper.writeValueAsString(Res);
     }

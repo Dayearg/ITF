@@ -27,4 +27,5 @@ public class MedicineControl {
             ,@RequestParam int Grade){
         return MS.add(MID,Orign,MSO,Grade);
     }
+
 }
